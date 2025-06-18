@@ -9,25 +9,27 @@
     * { box-sizing: border-box; }
     body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: #f4f6f8; color: #1a1a1a; line-height: 1.6; }
     header, section, footer { padding: 60px 20px; max-width: 1200px; margin: auto; }
-    header { background: linear-gradient(135deg, #004aad, #00aaff); color: white; text-align: center; padding: 80px 20px; border-bottom: 6px solid #003a8c; }
+    header { background: linear-gradient(135deg, #040e1a, #00aaff); color: white; text-align: center; padding: 80px 20px; border-bottom: 6px solid #003a8c; }
     h1 { font-size: 3rem; margin-bottom: 10px; }
-    h2 { color: #004aad; font-size: 2rem; margin-top: 60px; }
+    h2 { color: #040e1a; font-size: 2rem; margin-top: 60px; }
     .grid { display: grid; gap: 30px; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); margin-top: 30px; }
     .card { background: white; padding: 25px; border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.08); transition: transform 0.3s ease, font-weight 0.3s ease, text-decoration 0.3s ease; text-decoration: none; color: inherit; font-size: 1.25rem; }
     .card:hover { transform: translateY(-5px); font-weight: bold; text-decoration: underline; }
     .leaders { display: flex; flex-wrap: wrap; gap: 40px; justify-content: center; margin-top: 40px; }
-    .leader-card { background: #004aad; color: white; border-radius: 20px; padding: 20px; width: 300px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .leader-card { background: #040e1a; color: white; border-radius: 20px; padding: 20px; width: 300px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
     .leader-card img { width: 100%; border-radius: 12px; }
     .leader-card h3 { margin-top: 20px; font-size: 1.25rem; }
     .leader-card p { margin-top: 5px; font-size: 1rem; }
-    .linkedin-button { display: inline-flex; align-items: center; background: #ffffff; color: #004aad; border-radius: 20px; padding: 8px 16px; margin-top: 15px; font-weight: bold; text-decoration: none; }
+    .linkedin-button { display: inline-flex; align-items: center; background: #ffffff; color: #040e1a; border-radius: 20px; padding: 8px 16px; margin-top: 15px; font-weight: bold; text-decoration: none; }
     .linkedin-button img { margin-right: 8px; width: 18px; height: 18px; }
     footer { background: #002b5c; color: white; text-align: center; font-size: 0.95rem; padding: 30px 20px; margin-top: 60px; border-top: 6px solid #001c3f; }
+    #need thick while bord  
+er { border: 2px solid #002b5c; padding: 10px; border-radius: 8px; background: #07121d; }
   </style>
 </head>
 <body>
 
-<header style="text-align: center; padding: 0; background: #002b5c;">
+<!-- <header style="text-align: center; padding: 0; background: #002b5c;">
   <img src="images/bfsi-banner.png" alt="BFSI Background" style="
     width: 50%;
     height: auto;
@@ -39,9 +41,36 @@
     <p style="font-size: 1.2rem;">Accelerating Innovation in Banking, Financial Services & Insurance</p>
     <p style="font-size: 1.1rem; margin-top: 10px;">Empowering the BFSI sector with AI, cloud, data, and digital engineering solutions.</p>
   </div>
+</header> -->
+
+
+<header style="background: #040e1a; color: white; padding: 60px 0;">
+  <div style="
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  ">
+    <!-- Image column -->
+    <div style="flex: 1 1 400px; text-align: center; padding: 20px;">
+      <img src="images/bfsi-banner.png" alt="BFSI AI Banner" style="max-width: 100%; height: auto; border-radius: 12px;">
+    </div>
+
+    <!-- Text column -->
+    <div style="flex: 1 1 400px; padding: 20px;">
+      <h1 style="font-size: 2.8rem; margin-bottom: 20px;">BFSI Solutions</h1>
+      <p style="font-size: 1.2rem; line-height: 1.6;">
+        Accelerating Innovation in Banking, Financial Services & Insurance.
+      </p>
+      <p style="font-size: 1.1rem; margin-top: 15px; line-height: 1.6;">
+        Empowering the BFSI sector with AI, cloud, data, and digital engineering solutions.
+      </p>
+    </div>
+  </div>
 </header>
-
-
 
 
 
@@ -54,10 +83,31 @@
 <section>
   <h2>Our Core Offerings</h2>
   <div class="grid">
-    <a href="digital-banking.html" class="card">
-      <h3>Digital Banking</h3>
+    <a href="digital-banking.html" class="card" style="border: 2px solid #040e1a;"
+>      <h3>Digital Banking</h3>
       <p>Transforming retail, commercial, and private banking experiences with secure, omnichannel solutions and AI-driven personalization.</p>
     </a>
+    <style>
+ .card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  text-decoration: none;
+  color: inherit;
+  font-size: 1.25rem;
+  border: 2px solid #040e1a; /* 🔵 Border */
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #00aaff;
+  font-weight: bold;
+  text-decoration: underline;
+} 
+</style>
+
     <a href="mortgage-lending.html" class="card">
       <h3>Mortgage & Lending Platforms</h3>
       <p>End-to-end digital mortgage solutions for origination, underwriting, servicing, and refinancing across banks and NBFCs. AI models are used for credit scoring, fraud detection, and automated decisioning.</p>
